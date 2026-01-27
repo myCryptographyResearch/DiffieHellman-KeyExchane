@@ -16,6 +16,11 @@ class User:
     def get_name(self):
         return self.name
 
+    def add_inbox(self, recipient, message):
+        self.inbox.append({"recipient": recipient, "message": message})
+
+    def add_outbox(self, sender, message):
+        self.outbox.append({"sender": sender, "message": message})
 
 class Chanel:
     def __init__(self, id, name):
@@ -47,6 +52,18 @@ class Network:
         cur_user = User(id, name)
         self.users_list.append(cur_user)
         print("User {} is added to network!".format(name))
+
+    def send(self, chanel, sender, recipient, message):
+        if chanel in self.chanels_list:
+            if sender in self.users_list and recipient in self.users_list:
+                sent = {"sender": sender.get_id(), "recipient": recipient.get_id(), "message":message, "status": True}
+                chanel.add_log(sent)
+                sender.add_outbox(recipient.get_id(), message)
+                recipient.add_inbox(sender.get_id(), message)
+            else:
+                chanel.add_log({"erroe": "Invalid sender or recipient", "status": False})
+        else:
+            print({"erroe": "Invalid Chanel"})
 
 
 
