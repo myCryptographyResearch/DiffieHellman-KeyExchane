@@ -67,3 +67,4 @@ class Network:
 
 
 
+network1 = Network("Hospital")
