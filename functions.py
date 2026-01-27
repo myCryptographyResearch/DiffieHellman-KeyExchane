@@ -27,3 +27,13 @@ class Chanel:
 
     def add_log(self, log):
         self.logs.append(log)
+
+    def see_logs(self):
+        return self.logs
+
+class Network:
+    def __init__(self, name):
+        print("Network {} is created!".format(name))
+        self.name = name
+        self.chanels_list = []
+
