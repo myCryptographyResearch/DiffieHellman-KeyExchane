@@ -21,7 +21,6 @@ class Chanel:
     def __init__(self, id, name):
         self.id = id
         self.name = name
-        self.password = 0
         self.activate = False
         self.logs = []
 
@@ -36,4 +35,9 @@ class Network:
         print("Network {} is created!".format(name))
         self.name = name
         self.chanels_list = []
+
+    def add_chanel(self, id, chanel):
+        cur_chanel = Chanel(id, chanel)
+        cur_chanel.activate = True
+        self.chanels_list.append(cur_chanel)
 
