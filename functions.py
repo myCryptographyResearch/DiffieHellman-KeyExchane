@@ -40,4 +40,7 @@ class Network:
         cur_chanel = Chanel(id, chanel)
         cur_chanel.activate = True
         self.chanels_list.append(cur_chanel)
+        print("Channel {} is added to network!".format(chanel))
+
+
 
