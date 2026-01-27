@@ -15,3 +15,14 @@ class User:
 
     def get_name(self):
         return self.name
+
+
+class Chanel:
+    def __init__(self, id, name):
+        self.id = id
+        self.name = name
+        self.password = 0
+        self.activate = False
+        self.logs = []
+
+    
