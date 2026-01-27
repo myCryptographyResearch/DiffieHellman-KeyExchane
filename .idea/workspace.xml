@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20cb3a81-dd1e-4d3a-908c-726c6c98d791" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+    <list default="true" id="20cb3a81-dd1e-4d3a-908c-726c6c98d791" name="Changes" comment="test functions">
+      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.functions.executor": "Run",
+    "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -84,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769527685584</updated>
-      <workItem from="1769527718306" duration="386000" />
+      <workItem from="1769527718306" duration="2153000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -94,7 +96,87 @@
       <option name="project" value="LOCAL" />
       <updated>1769527833148</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="User class created">
+      <option name="closed" value="true" />
+      <created>1769528255549</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769528255549</updated>
+    </task>
+    <task id="LOCAL-00003" summary="User get_name and get_id">
+      <option name="closed" value="true" />
+      <created>1769528394667</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769528394667</updated>
+    </task>
+    <task id="LOCAL-00004" summary="class Chanel is created">
+      <option name="closed" value="true" />
+      <created>1769528654742</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769528654743</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add_log for chanel">
+      <option name="closed" value="true" />
+      <created>1769528704546</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769528704546</updated>
+    </task>
+    <task id="LOCAL-00006" summary="class Network is created">
+      <option name="closed" value="true" />
+      <created>1769528916796</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1769528916796</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add_chanel in Network">
+      <option name="closed" value="true" />
+      <created>1769529082699</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1769529082699</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add_chanel in Network">
+      <option name="closed" value="true" />
+      <created>1769529136202</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769529136202</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add_user in Network">
+      <option name="closed" value="true" />
+      <created>1769529226019</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1769529226019</updated>
+    </task>
+    <task id="LOCAL-00010" summary="send in Network">
+      <option name="closed" value="true" />
+      <created>1769529750702</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1769529750702</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test functions">
+      <option name="closed" value="true" />
+      <created>1769529787673</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1769529787673</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +184,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="User class created" />
+    <MESSAGE value="User get_name and get_id" />
+    <MESSAGE value="class Chanel is created" />
+    <MESSAGE value="add_log for chanel" />
+    <MESSAGE value="class Network is created" />
+    <MESSAGE value="add_chanel in Network" />
+    <MESSAGE value="add_user in Network" />
+    <MESSAGE value="send in Network" />
+    <MESSAGE value="test functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="test functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
