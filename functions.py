@@ -48,6 +48,9 @@ class Network:
         self.chanels_list.append(cur_chanel)
         print("Channel {} is added to network!".format(chanel))
 
+    def get_chanel(self, chanel):
+        return self.chanels_list[chanel]
+
     def add_user(self, User):
         self.users_list.append(User)
         print("User {} is added to network!".format(User.get_name()))
@@ -68,7 +71,6 @@ class Network:
 
 network1 = Network("Steel factory")
 
-chanel1 = Chanel(1001, "Managers' section")
 
 user1 = User(101, "Alice")
 user2 = User(102, "Bob")
@@ -76,3 +78,10 @@ user2 = User(102, "Bob")
 network1.add_chanel(1001, "Managers' section")
 network1.add_user(user1)
 network1.add_user(user2)
+
+chanel = network1.get_chanel(1001)
+network1.send(chanel, user1, user2, "Hello")
+
+chanel.see_logs()
+print(user1.outbox)
+print(user2.inbox)
