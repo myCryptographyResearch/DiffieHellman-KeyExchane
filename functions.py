@@ -25,4 +25,5 @@ class Chanel:
         self.activate = False
         self.logs = []
 
-    
+    def add_log(self, log):
+        self.logs.append(log)
