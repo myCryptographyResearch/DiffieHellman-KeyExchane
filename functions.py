@@ -35,12 +35,18 @@ class Network:
         print("Network {} is created!".format(name))
         self.name = name
         self.chanels_list = []
+        self.users_list = []
 
     def add_chanel(self, id, chanel):
         cur_chanel = Chanel(id, chanel)
         cur_chanel.activate = True
         self.chanels_list.append(cur_chanel)
         print("Channel {} is added to network!".format(chanel))
+
+    def add_user(self, id, name):
+        cur_user = User(id, name)
+        self.users_list.append(cur_user)
+        print("User {} is added to network!".format(name))
 
 
 
