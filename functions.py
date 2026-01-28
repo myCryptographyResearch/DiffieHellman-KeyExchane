@@ -72,8 +72,13 @@ class Network:
         else:
             print({"erroe": "Invalid Chanel"})
 
+class Diffie_Hellman:
+    def __init__(self, q):
+        #q is a large prime number
+        self.q = q
 
 
+"""
 network1 = Network("Steel factory")
 
 
@@ -90,3 +95,4 @@ network1.send(chanel, user1, user2, "Hello")
 print(chanel.see_logs())
 print(user1.outbox)
 print(user2.inbox)
+"""
