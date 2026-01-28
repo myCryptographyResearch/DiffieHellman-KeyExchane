@@ -29,6 +29,9 @@ class Chanel:
         self.activate = False
         self.logs = []
 
+    def get_id(self):
+        return self.id
+
     def add_log(self, log):
         self.logs.append(log)
 
@@ -48,8 +51,10 @@ class Network:
         self.chanels_list.append(cur_chanel)
         print("Channel {} is added to network!".format(chanel))
 
-    def get_chanel(self, chanel):
-        return self.chanels_list[chanel]
+    def get_chanel(self, chanel_id):
+        for chanel in self.chanels_list:
+            if chanel.get_id() == chanel_id:
+                return chanel
 
     def add_user(self, User):
         self.users_list.append(User)
