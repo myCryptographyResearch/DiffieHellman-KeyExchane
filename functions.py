@@ -87,6 +87,6 @@ network1.add_user(user2)
 chanel = network1.get_chanel(1001)
 network1.send(chanel, user1, user2, "Hello")
 
-chanel.see_logs()
+print(chanel.see_logs())
 print(user1.outbox)
 print(user2.inbox)
