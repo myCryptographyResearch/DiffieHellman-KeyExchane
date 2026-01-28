@@ -96,7 +96,10 @@ class Diffie_Hellman:
         return public_key
 
 dh = Diffie_Hellman(13, 2)
-print(dh.public_key_computer(4))
+user1 = User(101, "Alice")
+
+user1.set_privateKey(dh, 5)
+print(user1.key)
 
 """
 network1 = Network("Steel factory")
