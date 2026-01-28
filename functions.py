@@ -95,6 +95,10 @@ class Diffie_Hellman:
         public_key = math.pow(self.g, x)%self.q
         return public_key
 
+    def exchange_key(self, k1, k2):
+        exchanged_key = math.pow(k1, k2)%self.q
+        return exchanged_key
+
 dh = Diffie_Hellman(13, 2)
 user1 = User(101, "Alice")
 
