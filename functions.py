@@ -113,7 +113,7 @@ user1 = User(101, "Alice")
 user1.set_privateKey(dh, 5)
 print(user1.key)
 
-"""
+
 network1 = Network("Steel factory")
 
 
@@ -125,9 +125,13 @@ network1.add_user(user1)
 network1.add_user(user2)
 
 chanel = network1.get_chanel(1001)
-network1.send(chanel, user1, user2, "Hello")
+user1.set_privateKey(dh, 5)
+prv1 = user1.key['privateKey']
+network1.send(chanel, user1, user2, prv1)
+
+user2.set_privateKey(dh, 4)
+prv2 = user2.key['privateKey']
+network1.send(chanel, user2, user1, prv2)
 
 print(chanel.see_logs())
-print(user1.outbox)
-print(user2.inbox)
-"""
+
