@@ -1,3 +1,6 @@
+import math
+
+
 class User:
     def __init__(self, id, name):
         self.id = id
@@ -73,9 +76,16 @@ class Network:
             print({"erroe": "Invalid Chanel"})
 
 class Diffie_Hellman:
-    def __init__(self, q):
-        #q is a large prime number
+    def __init__(self, q, g):
+        #q is a large prime number and g is generator of Zq-star
+        # q and g are public in chanel
         self.q = q
+        self.g = g
+
+    def public_key_computer(self, x):
+        public_key = math.pow(g, x, q)
+        return public_key
+
 
 
 """
