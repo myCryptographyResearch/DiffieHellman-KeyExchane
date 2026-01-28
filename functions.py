@@ -86,6 +86,11 @@ class Diffie_Hellman:
         self.q = q
         self.g = g
 
+    def get_q(self):
+        return self.q
+    def get_g(self):
+        return self.g
+
     def public_key_computer(self, x):
         public_key = math.pow(self.g, x)%self.q
         return public_key
