@@ -34,7 +34,7 @@ class User:
         for inbox in self.inbox:
             if inbox["recipient"] == sender_id:
                 k2= inbox["message"]
-                exchanged_key = math.pow(k2, private_key)
+                exchanged_key = math.pow(k2, private_key)%key_exchanger.get_q()
                 self.key["exchanged_key"] = exchanged_key
 
 class Chanel:
