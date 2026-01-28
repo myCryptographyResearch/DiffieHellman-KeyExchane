@@ -9,7 +9,7 @@ class User:
         self.outbox = []
         self.key = {
             "privateKey": None,
-            "publicKey": None,
+            "exchanged_key": None,
         }
 
     #Each user is known by id and name in the Network
@@ -28,6 +28,14 @@ class User:
     def set_privateKey(self, key_exchanger, x):
         private_key = math.pow(key_exchanger.get_g(), x)%key_exchanger.get_q()
         self.key["privateKey"] = private_key
+
+    def set_exchanged_key(self, key_exchanger, sender_id):
+        private_key = self.key['privateKey']
+        for inbox in self.inbox:
+            if inbox["recipient"] == sender_id:
+                k2= inbox["message"]
+                exchanged_key = math.pow(k2, private_key)
+                self.key["exchanged_key"] = exchanged_key
 
 class Chanel:
     def __init__(self, id, name):
