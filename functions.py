@@ -134,4 +134,8 @@ prv2 = user2.key['privateKey']
 network1.send(chanel, user2, user1, prv2)
 
 print(chanel.see_logs())
+user1.set_exchanged_key(dh, user2.get_id())
+print(user1.key['exchanged_key'])
 
+user2.set_exchanged_key(dh, user1.get_id())
+print(user2.key['exchanged_key'])
