@@ -83,10 +83,11 @@ class Diffie_Hellman:
         self.g = g
 
     def public_key_computer(self, x):
-        public_key = math.pow(g, x, q)
+        public_key = math.pow(self.g, x)
         return public_key
 
-
+dh = Diffie_Hellman(13, 2)
+print(dh.public_key_computer(2))
 
 """
 network1 = Network("Steel factory")
