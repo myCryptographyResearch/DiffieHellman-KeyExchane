@@ -25,6 +25,10 @@ class User:
     def add_outbox(self, sender, message):
         self.outbox.append({"sender": sender, "message": message})
 
+    def set_privateKey(self, key_exchanger, x):
+        private_key = math.pow(key_exchanger.get_g(), x)%key_exchanger.get_q()
+        self.key["privateKey"] = private_key
+
 class Chanel:
     def __init__(self, id, name):
         self.id = id
